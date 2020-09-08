@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Formulário</title>
+  <style>
+    body {
+      width: 100%;
+      align-content: center;
+      align-items: center;
+      background-image: url("https://i.pinimg.com/originals/46/fc/ea/46fceacf44dcc4ee00501ca2891d9814.jpg");
+      background-repeat: no-repeat;
+    }
+    .formulario {
+      position: relative;
+      display: inline;
+      align-items: center !important;
+      align-content: center !important;
+    }
+    input {
+      width: 80%;
+      height: 3vh;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    form {
+      align-items: center;
+      text-align: center;
+    }
+    .password {
+      width: 79%;
+    }
+    .reveal {
+      margin: 0;
+      background-color: #efefef;
+    }
+    .efi {
+      text-align: center;
+      width: 350px;
+      padding: 15px 20px;
+      border: 1px solid #0000;
+      border-radius: 6px;
+      background-color: #efefef;
+      font-size: 18px;
+    }
+    .text{
+      background-color: #efefef;
+    }
+
+    .image {
+      background-color: #efefef;
+    }
+  </style>
+</head>
+
+<body>
+  <h2 class="text">Registrar</h2>
+      <form action="/show" method="POST">
+        <input type="text" placeholder="Nome" name="name"><br>
+        <input class="password" type="password" id="senha" placeholder="Senha" name="senha">
+        <img class="image" onclick="mostrarOcultarSenha()" id="reveal"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABDUlEQVQ4jd2SvW3DMBBGbwQVKlyo4BGC4FKFS4+TATKCNxAggkeoSpHSRQbwAB7AA7hQoUKFLH6E2qQQHfgHdpo0yQHX8T3exyPR/ytlQ8kOhgV7FvSx9+xglA3lM3DBgh0LPn/onbJhcQ0bv2SHlgVgQa/suFHVkCg7bm5gzB2OyvjlDFdDcoa19etZMN8Qp7oUDPEM2KFV1ZAQO2zPMBERO7Ra4JQNpRa4K4FDS0R0IdneCbQLb4/zh/c7QdH4NL40tPXrovFpjHQr6PJ6yr5hQV80PiUiIm1OKxZ0LICS8TWvpyyOf2DBQQtcXk8Zi3+JcKfNafVsjZ0WfGgJlZZQxZjdwzX+ykf6u/UF0Fwo5Apfcq8AAAAASUVORK5CYII=" />
+        <input type="text" placeholder="Email" name="email"><br>
+        <input type="text" placeholder="Whatsapp" name="whatsapp"><br>
+        <input type="text" placeholder="Cidade" name="city"><br>
+        <input type="text" placeholder="UF" name="uf"><br>
+        <button class="efi" type="submit">Submit</button>
+      </form>
+</body>
+<script>
+  function mostrarOcultarSenha() {
+    var senha = document.getElementById("senha");
+    if (senha.type == "password") {
+      senha.type = "text";
+    } else {
+      senha.type = "password";
+    }
+  }
+</script>
+
+</html>
