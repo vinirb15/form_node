@@ -57,12 +57,13 @@ npm start
 - [Knex](http://knexjs.org)
 - [body-parser](https://www.npmjs.com/package/body-parser)
 - [EJS](https://ejs.co)
+- [BCRYPT](https://www.npmjs.com/package/bcrypt)
 
 ## Perguntas frequentes :question:
 - Posso utilizar um modelo diferente de banco de dados que não seja o mysql:grey_question:
 :arrow_right_hook: Sim, na documentação do knexjs possui outros templates de bancos diferentes
 - Qual a porta configurada para rodar a index:grey_question:
-:arrow_right_hook: Assim que roda a aplicação a home-page fica visível na porta 3000
+:arrow_right_hook: Assim que roda a aplicação, a home-page fica visível na porta 3000
 - Porque possui um campo input password no formulário:grey_question:
 :arrow_right_hook: Tomei a liberdade de criar um modelo de ser facilmente adaptável para uma aba de login, ele toma conta de criptografar a senha para salvar no banco através do bcrypt
 
